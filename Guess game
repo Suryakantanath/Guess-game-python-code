@@ -1,0 +1,25 @@
+# Rules
+c = 5
+while True:
+    a = 18
+    i = int(input("Guess the number: "))
+    if c == 0:
+        print("Game over")
+        break
+    elif i > a:
+        print("Please select the lesser number")
+        c = c-1
+       # n = c-b
+        print(" you have left", c, "chances")
+       # print("You have used", n, "chances")
+        continue
+    elif i < a:
+        print("Please select the greater number: ")
+        c = c-1
+       # n = c - b
+        print(" you have left", c, "chances")
+        #print("You have used", n, "chances")
+        continue
+    elif i == a:
+        print("You guessed successfully")
+        break
